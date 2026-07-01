@@ -4,6 +4,7 @@ const publications = [
       "A dirac-frenkel-onsager principle: instantaneous residual minimization with gauge momentum for nonlinear parametrizations of PDE solutions",
     authors: ["Matteo Raviola", "Benjamin Peherstorfer"],
     venue: "ICML 2026 (Spotlight)",
+    status: "2026",
     year: 2026,
     links: [],
     abstract:
@@ -30,6 +31,7 @@ const publications = [
     title: "A function approximation algorithm using multilevel active subspaces",
     authors: ["Fabio Nobile", "Matteo Raviola", "Raul Tempone"],
     venue: "Monte Carlo and Quasi-Monte Carlo Methods 2024, Springer",
+    status: "2026",
     year: 2026,
     links: [
       {
