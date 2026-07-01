@@ -3,8 +3,7 @@ const publications = [
     title:
       "A dirac-frenkel-onsager principle: instantaneous residual minimization with gauge momentum for nonlinear parametrizations of PDE solutions",
     authors: ["Matteo Raviola", "Benjamin Peherstorfer"],
-    venue: "Manuscript submitted to ICML 2026",
-    status: "Under review",
+    venue: "ICML 2026 (Spotlight)",
     year: 2026,
     links: [],
     abstract:
@@ -31,8 +30,7 @@ const publications = [
     title: "A function approximation algorithm using multilevel active subspaces",
     authors: ["Fabio Nobile", "Matteo Raviola", "Raul Tempone"],
     venue: "Monte Carlo and Quasi-Monte Carlo Methods 2024, Springer",
-    status: "2025, to appear",
-    year: 2025,
+    year: 2026,
     links: [
       {
         label: "arXiv",
@@ -116,30 +114,27 @@ function renderPublication(publication) {
 
   return `
     <article class="publication-card ${hasImage ? "has-image" : ""}">
-      ${
-        hasImage
-          ? `
+      ${hasImage
+      ? `
             <div class="publication-media">
               <img src="${publication.image}" alt="${publication.title}">
             </div>
           `
-          : ""
-      }
+      : ""
+    }
       <div class="publication-content">
         <p class="publication-title">${publication.title}</p>
         <p class="publication-authors">${publication.authors
-          .map(renderAuthor)
-          .join(", ")}</p>
+      .map(renderAuthor)
+      .join(", ")}</p>
         <p class="publication-venue">${publication.venue}</p>
         <p class="publication-status">${publication.status}</p>
-        ${
-          linksMarkup
-            ? `<div class="publication-links">${linksMarkup}</div>`
-            : ""
-        }
-        ${
-          publication.abstract
-            ? `
+        ${linksMarkup
+      ? `<div class="publication-links">${linksMarkup}</div>`
+      : ""
+    }
+        ${publication.abstract
+      ? `
               <button
                 type="button"
                 class="abstract-toggle"
@@ -152,8 +147,8 @@ function renderPublication(publication) {
                 <p>${publication.abstract}</p>
               </div>
             `
-            : ""
-        }
+      : ""
+    }
       </div>
     </article>
   `;
